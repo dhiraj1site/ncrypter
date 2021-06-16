@@ -1,0 +1,11 @@
+{
+  "name": "ncrypter",
+  "version": "1.0.0",
+  "description": "a simple package to encrypt/decrypt across different platforms",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "dhiraj1site",
+  "license": "ISC"
+}
