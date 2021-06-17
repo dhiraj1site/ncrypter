@@ -1,6 +1,6 @@
 {
   "name": "ncrypter",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a simple package to encrypt/decrypt across different platforms",
   "main": "index.js",
   "scripts": {

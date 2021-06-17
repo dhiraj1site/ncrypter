@@ -2,7 +2,7 @@ const helper = require('./helpers');
 
 const browser = {};
 
-browser.encrypt = function(level = 2, secret = 'ncrypter', encoding = 'base64') {
+browser.encrypt = function(level = 3, secret = 'ncrypter', encoding = 'base64') {
         var enocderString = helper.getEncodeString(level, secret);
         if(encoding == 'base64') {
             return btoa(enocderString);
@@ -12,7 +12,7 @@ browser.encrypt = function(level = 2, secret = 'ncrypter', encoding = 'base64') 
         }
     }
 
-    browser.decrypt = function(encryptedString, level = 2, secret = 'ncrypter', encoding = 'base64') {
+    browser.decrypt = function(encryptedString, level = 3, secret = 'ncrypter', encoding = 'base64') {
     var enocderString = helper.getEncodeString(level, secret);
     if(encoding == 'base64') {
         let decodedString =  atob(encryptedString);

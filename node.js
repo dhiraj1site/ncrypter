@@ -2,7 +2,7 @@ const helper = require('./helpers');
 
 const node = {};
 
-node.encrypt = function(level = 2, secret = 'ncrypter', encoding = 'base64') {
+node.encrypt = function(level = 3, secret = 'ncrypter', encoding = 'base64') {
         var enocderString = helper.getEncodeString(level, secret);
         if(encoding == 'base64') {
             return Buffer.from(enocderString).toString('base64');
@@ -12,7 +12,7 @@ node.encrypt = function(level = 2, secret = 'ncrypter', encoding = 'base64') {
         }
     }
 
-node.decrypt = function(encryptedString, level = 2, secret = 'ncrypter', encoding = 'base64') {
+node.decrypt = function(encryptedString, level = 3, secret = 'ncrypter', encoding = 'base64') {
     var enocderString = helper.getEncodeString(level, secret);
     if(encoding == 'base64') {
         let encodedString =  Buffer.from(encryptedString, 'base64').toString();
